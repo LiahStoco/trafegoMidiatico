@@ -1,35 +1,50 @@
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-   
-    
-}
-.image {
-   margin: 0;
-   display: flex;
-   justify-content: center;
-   width: 100%;
-   height: 88vh;
+:root {
+  --color-magenta: #dd1069;
 }
 
-.upd{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-right: 5px;
+html {
+  font-size: 16px;
 }
 
-button {
-    display: inline-block;
-    margin-top: 10px;
-    width:110px;
-	height:40px;
-	background-color:#DD1069;
-	border-radius: 10px;
-    border: none;
-    box-shadow:  0px 0px 5px  #DD1069;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.game__card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex: auto;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+.game__card > img {
+  width: calc(min(500px, 100%));
+  height: fit-content;
+}
+
+.game__button {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-magenta);
+  box-shadow: 0px 0px 5px var(--color-magenta);
+  padding: 1rem;
+  color: white;
+  position: absolute;
+  bottom: 12px;
 }
