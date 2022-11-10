@@ -7,12 +7,12 @@ function start() {
 
 function renderBoard() {
 
-    let ramdomNumber =  Math.ceil(Math.random()*26);
+    let ramdomNumber =  Math.ceil(Math.random()*27);
     if (ramdomNumber === 0 ) {
         ramdomNumber = 1;
     }
     
-    way = 'img/' + ramdomNumber.toString() + '.jpg';
+    way = 'img/' + ramdomNumber.toString() + '.png';
     var divBoard = document.querySelector('#image-board')
     divBoard.innerHTML = '';
     let fotho = document.createElement('img');
