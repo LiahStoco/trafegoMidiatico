@@ -15,12 +15,10 @@ html {
 
 .game {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .game__card {
@@ -30,7 +28,6 @@ html {
   align-items: flex-start;
   flex: auto;
   overflow-y: auto;
-  padding-bottom: 50px;
 }
 
 .game__card > img {
@@ -43,8 +40,13 @@ html {
   border-radius: 0.5rem;
   background-color: var(--color-magenta);
   box-shadow: 0px 0px 5px var(--color-magenta);
-  padding: 1rem;
   color: white;
-  position: absolute;
   bottom: 12px;
+  width: calc(min(450px, 90%));
+  margin: 0px 10% 24px 10%;
+  padding: 0.5rem 0;
+}
+
+.game__button-icon {
+  height: 3rem;
 }
