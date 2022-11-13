@@ -4,6 +4,7 @@
 
 html {
   font-size: 16px;
+  background: white !important;
 }
 
 * {
@@ -49,4 +50,8 @@ html {
 
 .game__button-icon {
   height: 3rem;
+}
+
+.hidden {
+  display: none;
 }
