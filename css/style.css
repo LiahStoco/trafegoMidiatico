@@ -1,5 +1,6 @@
 :root {
   --color-magenta: #dd1069;
+  --color-magenta-lighten: #ff006f;
 }
 
 html {
@@ -15,7 +16,6 @@ html {
 }
 
 .game {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,6 @@ html {
 
 .game__card {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: flex-start;
   flex: auto;
@@ -38,18 +37,23 @@ html {
 
 .game__button {
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background-color: var(--color-magenta);
-  box-shadow: 0px 0px 5px var(--color-magenta);
+  box-shadow: 0px 0px 15px var(--color-magenta);
   color: white;
   bottom: 12px;
   width: calc(min(450px, 90%));
   margin: 0px 10% 24px 10%;
   padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.game__button:hover {
+  background-color: var(--color-magenta-lighten);
 }
 
 .game__button-icon {
-  height: 3rem;
+  height: 2.5rem;
 }
 
 .hidden {
